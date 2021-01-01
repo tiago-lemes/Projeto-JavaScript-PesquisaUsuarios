@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerSearch">
+        <h1>Pesquisa de Usuários</h1>
+
+        <div id="divFormSearch" class="hidden">
+          <form>
+            <input
+              type="text"
+              id="inputName"
+              placeholder="Digite o critério de busca..."
+            />
+            <input
+              type="button"
+              value="BUSCAR"
+              class="waves-effect waves-light btn"
+              id="btnSearch"
+            />
+          </form>
+        </div>
+      </div>
+      <div id="divContainerResultados" class="containerResultados hidden">
+        <div class="containerDetalheResultado">
+          <div>
+            <h4 class="margin">
+              <span id="spanCountUsers">(0) usuário(s) encontrado(s)</span>
+            </h4>
+          </div>
+          <div id="divUsersFinded"></div>
+        </div>
+        <div class="containerDetalheResultado">
+          <div>
+            <h4 class="margin">
+              <span id="spanStatistics">Estatísticas</span>
+            </h4>
+          </div>
+          <div id="divResultStatiscs">
+            <ul class="margin">
+              <li>Sexo Masculino: <span id="spanCountUsersMen">0</span></li>
+              <li>Sexo Feminino: <span id="spanCountUsersWomen">0</span></li>
+              <li>Soma das Idades: <span id="spanSumAges">0</span></li>
+              <li>Médias das Idades: <span id="spanAverageAges">0</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="divWaiting">
+        <div class="flex-row flex-center hidden">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+          <span style="margin-left: 10px">Aguarde</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

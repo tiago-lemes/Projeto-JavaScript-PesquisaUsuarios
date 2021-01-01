@@ -1,0 +1,16 @@
+{
+  "name": "desafio-final-modulo",
+  "version": "1.0.0",
+  "description": "Desafio Final do Módulo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=3001"
+  },
+  "keywords": [],
+  "author": "Tiago Lemes",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
